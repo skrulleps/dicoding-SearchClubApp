@@ -159,23 +159,25 @@ main {
 }
 
 .club-list .list {
-  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-.club-list .list > * {
+/* .club-list .list > * {
   float: left;
   width: 49%;
 
   margin-block-end: 3%;
-}
+} */
 
-.club-list .list > *:nth-child(odd) {
+/* .club-list .list > *:nth-child(odd) {
   float: left;
-}
+} */
 
-.club-list .list > *:nth-child(even) {
+/* .club-list .list > *:nth-child(even) {
   margin-inline-start: 2%;
-}
+} */
 
 .club-list .list .card .fan-art-club {
   width: 100%;
